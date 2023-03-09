@@ -23,8 +23,9 @@ default: &default
 
 development:
   <<: *default
-  database: helo_rails_backend_development
-
+  database: hello_rails_backend
+  username: postgres
+  password: 1234
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -57,7 +58,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: helo_rails_backend_test
+  database: hello_rails_backend_test
+  username: postgres
+  password: 1234
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  database: helo_rails_backend_production
-  username: helo_rails_backend
-  password: <%= ENV["HELO_RAILS_BACKEND_DATABASE_PASSWORD"] %>
+  database: hello_rails_backend_production
+  username: hello_rails_backend
+  password: <%= ENV["HELLO_RAILS_BACKEND_DATABASE_PASSWORD"] %>
