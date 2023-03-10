@@ -51,7 +51,7 @@ After you're finished please remove all the comments and instructions!
 
 
 # Front end react code repo here
- [hello-react-front-end](https://github.com/degisew/hello-react-front-end)
+ [hello-react-front-end PR](https://github.com/degisew/hello-react-front-end/pull/1)
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Rails-React <a name="about-project"></a>
